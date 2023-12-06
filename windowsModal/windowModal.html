@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows Modal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Title Document.</h1>
+  <hr>
+  <main>
+    <section>
+      <h2>Sub-title One</h2>
+      <div class="page">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, blanditiis fuga. Facilis inventore fugiat suscipit dolorum cum sapiente consectetur itaque, ullam culpa ad? Pariatur, esse obcaecati vero nemo debitis vel fuga at, dolorem repudiandae error ducimus enim aut? Expedita id fugiat quod, nesciunt doloribus architecto reprehenderit aut eaque, enim placeat, iure libero reiciendis commodi assumenda velit. Necessitatibus, hic, culpa repellat consequuntur corporis a harum vitae aliquam exercitationem molestias sint alias in? Maxime culpa praesentium a iure, quibusdam neque aperiam placeat iste. Nostrum vitae quos harum magni provident, vel architecto molestias laudantium eos voluptates assumenda quod! Eum sapiente ut minus numquam reprehenderit animi, recusandae laudantium voluptatum nostrum quos! Id libero ab ipsa aliquam aut et veritatis asperiores magnam? Culpa qui eos fugit vero dolor, tempora reprehenderit temporibus veniam aliquid aut hic repellendus vel atque nihil animi nulla consequuntur dolores cumque ipsa eius libero quae debitis iste. Odio odit voluptatibus quam labore consequatur praesentium ducimus minus beatae ipsam, officiis officia voluptatem adipisci repellendus aut libero et ab debitis, voluptates facilis fugiat. Impedit, nulla! Perferendis, maiores. Nostrum dicta expedita possimus quam dolorem. Minus recusandae necessitatibus quisquam libero temporibus doloribus cum et ab! Ut eum impedit obcaecati autem assumenda cum rem pariatur culpa deleniti.</p>
+        <br>
+        <a href="#" id="btnAbrirModal" class="boton">OPEN WINDOWS</a>
+      </div>
+      <div class="fondo_transparente" id="ventanaModal">
+        <div class="modal">
+          <div class="modal_cerrar" id="btnCerrarModal">
+            <span>x</span>
+          </div>
+          <div class="modal_titulo">Windows Modal</div>
+          <div class="modal_mensaje">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed vitae corporis sunt vero a nesciunt est earum consequuntur praesentium beatae.</p>
+          </div>
+          <div class="modal_botones">
+            <a href="#" class="boton">Compartir</a>
+            <a href="#" class="boton">ACEPTAR</a>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+         btnAbrirModal.addEventListener("click",e=>{
+            ventanaModal.style.display = "block"
+            return false
+        })
+btnCerrarModal.addEventListener("click",e=>{
+            ventanaModal.style.display = "none"
+            return false
+        })
+      </script>
+
+    </section>
+    <hr>
+    <section>
+      <h2>Sub-title Two</h2>
+    </section>
+  </main>
+  <hr>
+  <footer></footer>
+</body>
+</html>    
